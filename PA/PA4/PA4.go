@@ -48,7 +48,7 @@ func main() {
 	for i := 1; i < 1000; i++ {
     	message2, errr := reader.ReadString('\n')
     	check(errr)
-        size = size + len(message2)
+      size = size + len(message2)
     	
     	tmp2 := fmt.Sprintf("%d %s", i, message2)
     	writer.WriteString(tmp2) // save sentence to writer	
